@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import { ShieldCheck } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
   { href: "#solutions", label: "Solutions" },
   { href: "#expertise", label: "Expertise" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export function Nav() {
@@ -30,11 +28,8 @@ export function Nav() {
           }`}
         >
           <a href="#top" className="flex items-center gap-2 group">
-            <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 ring-1 ring-brand/30">
-              <ShieldCheck className="h-4 w-4 text-brand" />
-            </span>
-            <span className="text-sm font-medium tracking-tight">
-              Chiamaka<span className="text-muted-foreground"> · Osuji</span>
+            <span className="font-serif italic text-lg tracking-tight">
+              Chiamaka Osuji
             </span>
           </a>
           <nav className="hidden md:flex items-center gap-1">
@@ -52,7 +47,7 @@ export function Nav() {
             href="#contact"
             className="inline-flex items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-sm font-medium text-brand-foreground hover:bg-brand-glow transition-colors"
           >
-            Book a consult
+            Hire
           </a>
         </div>
       </div>
