@@ -19,13 +19,14 @@ export function Contact() {
           <div className="absolute -top-32 -right-32 h-80 w-80 rounded-full bg-brand/20 blur-3xl pointer-events-none" />
           <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 relative">
             <div>
-              <div className="text-xs uppercase tracking-[0.2em] text-brand">Contact</div>
+              <div className="text-xs uppercase tracking-[0.2em] text-brand">Hire</div>
               <h2 className="mt-3 text-3xl sm:text-5xl text-balance">
-                Let's strengthen your financial crime controls.
+                Bring my AML/CFT expertise to your team.
               </h2>
               <p className="mt-5 text-muted-foreground max-w-md">
-                For consulting engagements, advisory work, or compliance program reviews —
-                send a brief and I'll respond within two business days.
+                Looking to hire for a full-time role, contract, or advisory engagement?
+                Share a few details about the opportunity and I'll respond within two
+                business days.
               </p>
 
               <div className="mt-10 space-y-3">
