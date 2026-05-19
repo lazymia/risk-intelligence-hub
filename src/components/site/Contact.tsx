@@ -71,15 +71,16 @@ export function Contact() {
               <Field label="Name" name="name" placeholder="Your full name" />
               <Field label="Email" name="email" type="email" placeholder="you@company.com" />
               <Field label="Company" name="company" placeholder="Organization" required={false} />
+              <Field label="Role / Opportunity" name="role" placeholder="e.g. AML Analyst, Contract, Advisory" required={false} />
               <div>
                 <label className="text-xs uppercase tracking-wider text-muted-foreground">
-                  How can I help?
+                  Tell me about the opportunity
                 </label>
                 <textarea
                   name="message"
                   required
                   rows={4}
-                  placeholder="Briefly describe your compliance challenge…"
+                  placeholder="Scope, engagement type, timeline…"
                   className="mt-2 w-full rounded-lg bg-background/60 border border-white/10 px-3 py-2.5 text-sm placeholder:text-muted-foreground/60 focus:outline-none focus:border-brand/50 focus:ring-2 focus:ring-brand/20 transition"
                 />
               </div>
@@ -87,7 +88,7 @@ export function Contact() {
                 type="submit"
                 className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-brand px-4 py-3 text-sm font-medium text-brand-foreground hover:bg-brand-glow transition-colors"
               >
-                {sent ? "Opening your mail client…" : "Send message"}
+                {sent ? "Opening your mail client…" : "Send hiring inquiry"}
                 <Send className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </button>
             </form>
