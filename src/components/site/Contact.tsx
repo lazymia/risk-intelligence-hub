@@ -59,9 +59,9 @@ export function Contact() {
               onSubmit={(e) => {
                 e.preventDefault();
                 const data = new FormData(e.currentTarget);
-                const subject = encodeURIComponent(`Inquiry from ${data.get("name")}`);
+                const subject = encodeURIComponent(`Hiring inquiry from ${data.get("name")}`);
                 const body = encodeURIComponent(
-                  `${data.get("message")}\n\n— ${data.get("name")} (${data.get("email")})`
+                  `Role / Opportunity: ${data.get("role") || "—"}\nCompany: ${data.get("company") || "—"}\n\n${data.get("message")}\n\n— ${data.get("name")} (${data.get("email")})`
                 );
                 window.location.href = `mailto:hello.chiamaka@gmail.com?subject=${subject}&body=${body}`;
                 setSent(true);
