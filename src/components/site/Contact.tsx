@@ -46,7 +46,7 @@ export function Contact() {
                   className="group flex items-center justify-between rounded-xl border border-white/5 bg-background/40 px-4 py-3 hover:border-brand/40 transition-colors"
                 >
                   <div className="flex items-center gap-3">
-                    <Linkedin className="h-4 w-4 text-brand" />
+                    <LinkedinIcon className="h-4 w-4 text-brand" />
                     <span className="text-sm">linkedin.com/in/chiamaka-osuji</span>
                   </div>
                   <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors" />
